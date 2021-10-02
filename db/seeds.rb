@@ -6,6 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+# Recipe.delete_all
+# User.delete_all
+
+# User.create(name: "user", 
+#     email: "user@email.com",
+#     password_digest: BCrypt::Password.create('password')
+# )
+
 Recipe.create(
     name: 'Best Banana Bread', 
     directions: 'The first step is to preheat your oven and prepare a loaf pan with non-stick cooking spray or grease with butter.
@@ -19,5 +27,6 @@ Recipe.create(
     servings: 1,
     ingredients: '1 Stick (½ Cup) Butter, 3 Large Ripe Bananas, 2 Large Eggs, 1 teaspoon Vanilla Extract, 2 Cups All Purpose Flour,
     1 Cup Granulated Sugar, 1 teaspoon Baking Soda, ½ teaspoon salt, ½ teaspoon cinnamon',
-    rating: 5
+    rating: 5,
+    user_id: 1
 )
